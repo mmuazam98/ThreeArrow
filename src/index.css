@@ -12,3 +12,12 @@ body {
   --primary: #6f00fc;
   --secondary: #f2e3ff;
 }
+.menu {
+  display: block !important;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .menu {
+    display: none !important;
+  }
+}

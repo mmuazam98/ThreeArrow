@@ -13,7 +13,8 @@ const RightSide = () => {
   const [currPage, setCurrPage] = useState(window.location.pathname.split("/").pop() || 1);
   useEffect(() => {
     return history.listen((location) => {
-      const page = location.pathname.split("/").pop();
+      const page = location.pathname.split("/").pop() || 1;
+      console.log(page);
       setCurrPage(page);
     });
   }, [history]);

@@ -34,3 +34,9 @@
   color: var(--primary);
   text-decoration: none;
 }
+@media (max-width: 700px) {
+  .column.right {
+    left: 0;
+    width: 80%;
+  }
+}
