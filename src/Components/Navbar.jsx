@@ -5,7 +5,7 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { useLocation, useHistory } from "react-router";
 const CustomNavLink = (props) => {
   return (
-    <NavLink to={"/" + props.link}>
+    <NavLink to={"/" + props.link} className="links">
       <Button variant="contained" className="nav-links">
         {props.linkName}
       </Button>
@@ -16,7 +16,16 @@ const Navbar = () => {
   const location = useLocation();
   const history = useHistory();
   useEffect(() => {
-    if (location.pathname === "/") history.push("/linkedin/1");
+    const nav = document.querySelectorAll(".links");
+    if (location.pathname === "/") {
+      nav[0].classList.add("active");
+    }
+    // eslint-disable-next-line
+  }, []);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      history.push("/linkedin/1");
+    }
     //eslint-disable-next-line
   }, [location.pathname]);
   return (

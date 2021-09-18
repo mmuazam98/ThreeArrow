@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
 }
 .nav a {
-  margin: 20px 0px;
+  margin: 20px 2px;
 }
 .nav .nav-links {
   text-transform: capitalize;
@@ -31,4 +31,34 @@ header {
 .nav .active .nav-links {
   background-color: var(--primary);
   color: var(--secondary);
+}
+@media (max-width: 750px) {
+  .heading {
+    max-width: 30rem;
+  }
+  .nav {
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .heading {
+    max-width: 25rem;
+  }
+  .nav {
+    max-width: 30rem;
+  }
+}
+@media (max-width: 510px) {
+  .heading {
+    max-width: 22rem;
+  }
+  .nav {
+    margin-top: 17px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav a {
+    margin: 5px 8px;
+  }
 }

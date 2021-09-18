@@ -23,6 +23,8 @@
 }
 .column.right .content .content-desc {
   color: grey;
+  height: 160px;
+  overflow-y: scroll;
 }
 .column.right .link {
   margin-top: 10px;
