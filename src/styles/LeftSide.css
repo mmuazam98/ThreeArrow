@@ -1,0 +1,38 @@
+.column.left {
+  position: relative;
+  width: 47%;
+  padding: 10px 5px;
+}
+.column.left::after {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.column.left a {
+  display: block;
+  margin: 13px 0;
+}
+
+.column.left .sub-links {
+  background-color: #fff;
+  box-shadow: none;
+  text-transform: capitalize;
+  width: 95%;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+.column.left a.active .sub-links {
+  background-color: #eedbff;
+}
+.column.left .sub-links:hover {
+  background-color: #eedbff;
+}
+.column.left .sub-links span {
+  justify-content: start;
+}

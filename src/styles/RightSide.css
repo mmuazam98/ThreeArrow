@@ -1,0 +1,13 @@
+.column.right {
+  position: relative;
+  left: 6%;
+  width: 47%;
+  padding: 0px 5px 10px;
+}
+.column.right .sub-heading {
+  text-align: center;
+  font-weight: 600;
+}
+.column.right .sub-heading p {
+  font-size: 22px;
+}
