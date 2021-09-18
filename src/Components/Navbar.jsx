@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/Navbar.css";
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
-
+import { useLocation, useHistory } from "react-router";
 const CustomNavLink = (props) => {
   return (
     <NavLink to={"/" + props.link}>
@@ -13,6 +13,12 @@ const CustomNavLink = (props) => {
   );
 };
 const Navbar = () => {
+  const location = useLocation();
+  const history = useHistory();
+  useEffect(() => {
+    if (location.pathname === "/") history.push("/linkedin/1");
+    //eslint-disable-next-line
+  }, [location.pathname]);
   return (
     <Router>
       <header>

@@ -1,7 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import "../styles/LeftSide.css";
+// eslint-disable-next-line
+const links = {
+  linkedin: ["Personalize With LinkedIn Recent Activity", "Personalize With LinkedIn Recomendation", "Personalize With Achievements", "Personalize With Bio / Job Description"],
+  icebreakers: ["Personalize With LinkedIn Recent Activity", "Personalize With LinkedIn Recomendation", "Personalize With Achievements", "Personalize With Bio / Job Description"],
+  personalisations: ["Personalize With LinkedIn Recent Activity", "Personalize With LinkedIn Recomendation", "Personalize With Achievements", "Personalize With Bio / Job Description"],
+  pitches: ["Personalize With LinkedIn Recent Activity", "Personalize With LinkedIn Recomendation", "Personalize With Achievements", "Personalize With Bio / Job Description"],
+};
 const CustomSubLink = (props) => {
   return (
     <NavLink to={"/" + props.link}>
