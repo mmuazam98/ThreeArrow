@@ -15,13 +15,13 @@ const CustomNavLink = (props) => {
 const Navbar = () => {
   const location = useLocation();
   const history = useHistory();
-  useEffect(() => {
-    const nav = document.querySelectorAll(".links");
-    if (location.pathname === "/") {
-      nav[0].classList.add("active");
-    }
-    // eslint-disable-next-line
-  }, []);
+  // useEffect(() => {
+  //   const nav = document.querySelectorAll(".links");
+  //   if (location.pathname === "/") {
+  //     nav[0].classList.add("active");
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
   useEffect(() => {
     if (location.pathname === "/") {
       history.push("/linkedin/1");
