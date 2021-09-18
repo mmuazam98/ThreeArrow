@@ -11,3 +11,24 @@
 .column.right .sub-heading p {
   font-size: 22px;
 }
+.column.right .content {
+  margin: 15px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 25px 15px 35px;
+}
+.column.right .content .content-heading {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.column.right .content .content-desc {
+  color: grey;
+}
+.column.right .link {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.column.right .link a {
+  color: var(--primary);
+  text-decoration: none;
+}
